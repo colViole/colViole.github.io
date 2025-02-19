@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest of the Mind</title>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/1b9112b68c.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <section id="section-one">
+        <div id="loadingScreen">
+            <p id="gameName">QUEST OF THE<br><span class="highlight"> MIND</span></p>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <div id="section-two">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center">
+                    <button class="navbar-brand btn" onclick="goToHome()">
+                        <i class="fa-solid fa-wand-sparkles"></i>
+                    </button>
+                    <div class="navbar-text">
+                        <p class="logo-text mb-0">Quest of the<br>
+                            <span class="text-gradient fw-bold">Mind</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sign In button for mobile -->
+                <div class="d-lg-none">
+                    <button class="btn btn-primary-gradient rounded-pill px-4">Sign In</button>
+                </div>
+                
+                <!-- Hamburger menu for mobile -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <button class="btn nav-link px-3" onclick="goToAbout()">About</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="aboutBTN" class="btn nav-link px-3" onclick="goToAbout()">Shop</button>
+                        </li>
+                        <!-- Sign In button for desktop -->
+                        <li class="nav-item ms-lg-2 d-none d-lg-block">
+                            <button class="btn btn-primary-gradient rounded-pill px-4">Sign In</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+            <!-- Main -->
+            <div id="homeScreen">
+                <h2 class="titleGame">QUEST OF THE</h2>
+                <h1 class="subTitle">MIND</h1>
+                <p class="gameDesc">Embark on a fun and interactive learning adventure with our 2D quiz game,<br> specially designed to enhance kids' mathematical ability!</p>
+                <button onclick="startToPlay()" id="start">START</button>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 md-4 sm-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Fun Quiz Adventure</h5>
+                          <hr>
+                          <p class="card-text">Engage kids with exciting and interactive questions that make learning enjoyable and educational.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-4 sm-6 ">
+                        <div class="card-body">
+                          <h5 class="card-title">Retro Graphics</h5>
+                          <hr>
+                          <p class="card-text">Enjoy colorful visuals that make every question more exciting.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-4 sm-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Awesome Characters</h5>
+                            <hr>
+                            <p class="card-text">Meet cool characters you can use to fight against different monsters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Music -->
+    <audio id="bgMusic" src="sfx/AdhesiveWombat - Night Shade  NO COPYRIGHT 8-bit Music.mp3" autoplay loop></audio>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/button/button.js"></script>
+</body>
+</html>

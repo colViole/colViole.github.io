@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(135deg, #1a1a3c 0%, #2d1b4b 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #131313;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-right: 0;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 0.5rem;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #7c3aed, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #1d1d1d;
+}
+
+.navbar-toggler {
+    border: 1px solid #3b3b3b;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border-color: #4b4b4b;
+}
+
+/* Button Styles */
+.btn-primary-gradient {
+    background: linear-gradient(45deg, #7c3aed, #2dd4bf);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    color: white;
+}
+
+.btn-outline-gradient {
+    background: transparent;
+    border: 2px solid #7c3aed;
+    color: #7c3aed;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gradient:hover {
+    background: linear-gradient(45deg, #7c3aed, #2dd4bf);
+    color: white;
+    border-color: transparent;
+}

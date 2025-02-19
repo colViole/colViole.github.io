@@ -1,0 +1,426 @@
+html, body {
+    background: #141725;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main Section */
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* Navbar Styles */
+
+.navbar {
+    width: 100%;
+    background: #131313;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #3b3b3b;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-right: 0;
+}
+
+.navbar-brand i {
+    font-size: 1rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 0.5rem;
+}
+
+.text-gradient {
+    background:#7c3aed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #1d1d1d;
+}
+
+.navbar-toggler {
+    border: 1px solid #3b3b3b;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border-color: #4b4b4b;
+}
+
+/* Button Styles */
+.btn-primary-gradient {
+    background: #7c3aed;
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    color: white;
+}
+
+.btn-outline-gradient {
+    background: transparent;
+    border: 2px solid #7c3aed;
+    color: #7c3aed;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gradient:hover {
+    background: linear-gradient(45deg, #7c3aed, #2dd4bf);
+    color: white;
+    border-color: transparent;
+}
+
+/* Introduction */
+
+.homeScreen {
+    background-image: url(/images/background.png), url(/images/background.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+    height: 574px;
+    width: 100%;
+    justify-items: center;
+    animation: fadeIn 1s;
+}
+
+.titleGame {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 60px;
+    margin-bottom: -50px;
+}
+
+.subTitle {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 120px;
+    color: #4FA4A5;
+}
+
+.gameDesc {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.selectQuest {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+#start {
+    cursor: pointer;
+    border: 3px solid black;
+    background: linear-gradient(to right, #330157 50%, white 0%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transition: all 0.3s;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    margin-top: 2em;
+}
+
+.slides {
+    height: 400px;
+    width: 200px;
+    border-radius: 0.5rem;
+}
+
+#start:hover {
+    color: white;
+    border: none;
+    box-shadow: none;
+    background-position: 0 0;
+    transform: translate(0.4rem, 0.4rem);
+}
+
+.card {
+    background: none;
+    justify-items: center;
+}
+
+.trial {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    margin-top: 0.3rem;
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .gameDesc {
+        font-size: 0.6rem;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+    }
+
+    .titleGame {
+        font-size: 3rem;
+        padding-top: 5.5rem;
+    }
+
+    
+}
+
+/* Content */
+
+.repetitionBackground {
+    background-image: url(/images/REPETITION.png);
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    animation: fadeIn 1s;
+    display: none;
+}
+
+.main-card {
+    background: none;
+    justify-items: center;
+    text-align: left;
+    height: 90rem;
+}
+
+.main-card-body {
+    background-color: rgba(49, 49, 49, 0.2);
+    border: 2px #2a4a4b;
+    border-radius: 10px;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    padding: 0.8rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: 80rem;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.card {
+    background: none;
+    color: aliceblue;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-title {
+    font-size: 3rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    color: rgb(161, 164, 167);
+}
+
+.container {
+    margin: 0;
+}
+
+.start {
+    cursor: pointer;
+    border: 3px solid black;
+    background: linear-gradient(to right, #330157 50%, white 0%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transition: all 0.3s;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    margin-bottom: 2em;
+}
+
+.start:hover {
+    color: white;
+    border: none;
+    box-shadow: none;
+    background-position: 0 0;
+    transform: translate(0.4rem, 0.4rem);
+}
+
+.content-card {
+    background: none;
+    color: aliceblue;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: left;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.content-card-title {
+    font-size: 3rem;
+}
+
+.content-card-title2 {
+    font-size: 2rem;
+}
+
+.content-card-text {
+    color: rgb(161, 164, 167);
+}
+
+table {
+    max-width: 100%;
+    background: transparent;
+    border: 1px solid #131313;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 100vw;
+    overflow: hidden;
+    color: rgb(161, 164, 167);
+}
+
+td, th {
+    width: 60px;
+}
+
+.titleGame {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 60px;
+    margin-bottom: -50px;
+    padding-top: 4rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.subTitle {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 120px;
+    color: #4FA4A5;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameDesc {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #trialIMG {
+        display: none;
+    }
+
+    .main-card-body {
+        height: 108rem;
+    }
+
+    .card-body {
+        height: 13.2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+        color: rgb(161, 164, 167);
+    }
+
+    .start {
+        height: 30px;
+        width: 100px;
+    }
+
+    .content-card-title {
+        font-size: 1.5rem;
+    }
+    
+    .content-card-title2 {
+        font-size: 1.2rem;
+    }
+    
+    .content-card-text {
+        font-size: 1rem;
+        color: rgb(161, 164, 167);
+    }
+
+    .content-card {
+        margin-left: 0;
+        width: 15rem;
+    }
+
+    td, th {
+        font-size: 1rem;
+    }
+
+    .gameDesc {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .slides {
+        height: 16rem;
+        width: 9rem;
+    }
+}
