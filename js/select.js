@@ -76,3 +76,14 @@ window.addEventListener("load", function () {
     const audio = document.getElementById("bgMusic");
 });
 
+function goToAbout() {
+    window.location.href = "index.html";
+    
+    let homeScreen = document.getElementById('homeScreen');
+    let about = document.querySelector('.about');
+
+    if (homeScreen.style.display !== 'none') {
+        homeScreen.style.display = 'none';
+        about.style.display = 'block';
+    }
+}

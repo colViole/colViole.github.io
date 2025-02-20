@@ -410,11 +410,12 @@ function restartQuiz() {
     selectRandomQuestions()
     loadQuestion();
 }
-
-function playAudio() {
-  const audio = new Audio("your-audio-file.mp3"); // Replace with your actual file
-  audio.play();
-}
-
-button.addEventListener("click", playAudio);
   
+// Music
+
+const audio = document.getElementById("bgMusic");
+audio.volume = 0.05;
+
+window.addEventListener("load", function () {
+  const audio = document.getElementById("bgMusic");
+});

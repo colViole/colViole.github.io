@@ -30,6 +30,17 @@ function animateBackground(timestamp) {
 const audio = document.getElementById("bgMusic");
 audio.volume = 0.05;
 
-window.addEventListener("load", function () {
-    const audio = document.getElementById("bgMusic");
+window.addEventListener("load", function() {
+    let audio = document.getElementById("bg-music");
+    audio.play().catch(error => console.log("Autoplay blocked: " + error));
 });
+
+function goToAbout() {
+    let homeScreen = document.getElementById('homeScreen');
+    let about = document.querySelector('.about');
+
+    if (homeScreen.style.display !== 'none') {
+        homeScreen.style.display = 'none';
+        about.style.display = 'block';
+    }
+}
