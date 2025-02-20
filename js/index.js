@@ -5,7 +5,6 @@ document.getElementById('section-one').addEventListener('animationend', function
     document.getElementById('section-one').style.display = 'none';
     document.getElementById('section-two').style.display = 'grid';
 
-    setupCanvasAnimation();
 });
 
 // Home Page
