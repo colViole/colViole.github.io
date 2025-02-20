@@ -143,7 +143,7 @@ html, body {
 /* Main */
 
 #homeScreen {
-    background-image: url(/images/background.png), url(/images/background.png);
+    background-image: url(/images/background.png);
     background-repeat: repeat-x;
     background-size: contain;
     text-align: center;
